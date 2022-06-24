@@ -1,0 +1,243 @@
+Q-1 Write a program to print size of an int, a float, a char and a double type variable.
+Ans =
+     #include<stdio.h>
+     #include<conio.h>
+     int main()
+     { 
+         int a;
+         char c;
+         float f;
+         double lf;
+         a=sizeof(a);
+         c=sizeof(c);
+         f=sizeof(f);
+         lf=sizeof(lf);
+         printf("Size of int = %d",a);
+         printf("\nSize of char = %d",c);
+         printf("\nSize of float = %f",f);
+         printf("\nSize of double =%lf",lf);
+         getch();
+     }
+____________________________________________________________________________
+Q-2 Write a program to find last digit of a given number.
+Ans =
+     #include<stdio.h>
+     #include<conio.h>
+     int main()
+     { 
+         int a;
+         printf("Enter a number:");
+         scanf("%d",&a);
+         a=a%10;
+         printf("The last digit is = %d",a);
+         getch();
+     }
+____________________________________________________________________________
+Q-3 Write a program to find first digit of a given three digit number.
+Ans = 
+     #include<stdio.h>
+
+     #include<conio.h>
+
+
+     int main()
+
+     {
+
+         int a,s;
+
+         printf("Enter a number:");
+
+         scanf("%d",&a);
+ 
+        s=a/100;
+
+         printf("%d",s);
+  
+         getch();
+     
+}
+
+____________________________________________________________________________
+Q-4 Write a program to find middle digit of a given three digit number.
+Ans = 
+
+     #include<stdio.h>
+
+     #include<conio.h>
+
+
+     int main()
+
+     {
+
+         int a,s,k;
+
+         printf("Enter a number:");
+
+         scanf("%d",&a);
+
+         s=a/10;
+
+         k=s/10;
+
+         printf("%d",k);
+
+         getch();
+
+     } 
+
+      
+____________________________________________________________________________
+Q-5 Write a program to swap values of two int variables.
+Ans = 
+     #include<stdio.h>
+
+     #include<conio.h>
+
+    
+ int main()
+    
+ {
+
+     int a,b,c;
+
+     printf("Enter a number:");
+
+     scanf("%d%d",&a,&b);
+
+     c=b;
+
+     b=a;
+
+     a=c;
+
+     printf("Swap number:a=%d b=%d",a,b);
+
+     getch();
+
+ }____________________________________________________________________________
+Q-6 Write a program to swap values of two int variables without using third variable.
+Ans =
+     #include<stdio.h>
+
+     #include<conio.h>
+
+ 
+    int main()
+
+     {
+
+     int a,b;
+
+     printf("Enter two number:");
+
+     scanf("%d%d",&a,&b);
+
+     a=a+b;   //  1+2=3
+     b=a-b;   //  3-2=1
+
+     a=a-b;   //  3-1=2
+     printf("Swap number:a=%d b=%d",a,b);
+
+     getch();
+
+ }
+____________________________________________________________________________
+Q-7 Write a program to make the last digit of a number stored in a variable as zero. (Example - if x=2345 then make it x=2340).
+Ans =    
+     #include<stdio.h>
+
+     #include<conio.h>
+
+
+     int main()
+
+     {
+
+         int x,s;
+
+         printf("Enter a number:");
+
+         scanf("%d",&x);
+     
+    s=x/10;
+     
+    if(!s%x==0)
+     
+    printf("x=%d",s);
+ 
+        printf("0");
+
+    
+    getch();
+
+     }
+
+____________________________________________________________________________
+Q-8 Write a program to input a number from the user and also input a digit. Append a digit in the number and print the resulting number. (Example - number=234 and digit=9 then the resulting number is 2349).
+Ans =
+     #include<stdio.h>
+
+     #include<conio.h>
+
+
+     int main()
+
+     {
+
+         int x,s;
+
+         printf("Enter a number:");
+
+         scanf("%d",&x);   // x=234
+
+         printf("Enter a digit:");
+
+         scanf("%d",&s);   // s=9 
+ 
+        printf("x=%d",x);   //x=234
+
+         printf("%d",s); //2349
+
+         getch();
+     
+}
+
+
+____________________________________________________________________________
+Q-9 Assume price of 1 USD is INR 76.23. Write a program to take the amount in INR and convert it into USD.
+Ans = 
+     #include<stdio.h>
+
+     #include<conio.h>
+
+
+     int main()
+
+     {
+
+         float INR;
+         int  USD;
+
+         printf("Enter indian amount:");
+     
+    scanf("%f",&INR);  
+         USD=INR/5/15;
+
+         printf("convert it into USD:%d",USD);
+
+         getch();
+
+     }
+
+
+____________________________________________________________________________
+Q-10 Write a program to take a three digit number from the user and rotate its digits by one position towards the right.
+Ans =
+
+
+
+
+
+
